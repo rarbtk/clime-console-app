@@ -5,20 +5,19 @@ let data = require("../db/data.json");
 class Busquedas {
   historial = data;
   constructor() {}
-  get paramsMapBox() {
-    return {
-      access_token:
-       process.env.MAPBOX_KEY,
-      limit: 5,
-      language: "es",
-    };
-  }
+  
   async ciudad(lugar = "") {
     let opcioness = "";
     try {
       const instance = axios.create({
         baseURL: `https://api.mapbox.com/geocoding/v5/mapbox.places/${lugar}.json`,
-        params: this.paramsMapBox,
+        params: {
+         access_token:
+         process.env.MAPBOX_KEY,
+         limit: 5,
+         language: "es"
+
+        },
       });
       let resp = await instance.get();
       opcioness = resp.data.features.map((element) => ({

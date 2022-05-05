@@ -16,7 +16,6 @@ class Busquedas {
          process.env.MAPBOX_KEY,
          limit: 5,
          language: "es"
-
         },
       });
       let resp = await instance.get();
@@ -29,7 +28,6 @@ class Busquedas {
     } catch (error) {}
     return opcioness; //retornar los lugares
   }
-
   async temp(lat, lon) {
     try {
       const instance = axios.create({

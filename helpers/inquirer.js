@@ -8,9 +8,9 @@ const menuPreguntas = [
       "========================".yellow
     }\n Seleccione una opción \n${"========================".yellow} \n`,
     choices: [
-      { value: 1, name: `${"1.".red} ${"Buscar ciudad".blue}` },
-      { value: 2, name: `${"2.".red} ${"Historial.".blue}` },
-      { value: 0, name: `${"0.".red} ${"Salir.".blue}` },
+      { value: 1, name: `${"1.".red} ${"Buscar ciudad".green}` },
+      { value: 2, name: `${"2.".red} ${"Historial.".green}` },
+      { value: 0, name: `${"0.".red} ${"Salir.".green}` },
     ],
   },
 ];

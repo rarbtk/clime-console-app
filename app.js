@@ -27,7 +27,7 @@ let main = async () => {
             lugaress[opt2.id].lng
           );
           busquedas.agregarHistorial(lugaress[opt2.id].nombre);
-          console.log(`\n Informacion de la ciudad \n`.blue);
+          console.log(`\n Informacion de la ciudad \n`.yellow);
           console.log(`Ciudad: ${lugaress[opt2.id].nombre}`);
           console.log(`Lat: ${lugaress[opt2.id].ltd}`);
           console.log(`Lng: ${lugaress[opt2.id].lng}`);
